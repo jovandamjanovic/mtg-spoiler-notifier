@@ -1,0 +1,16 @@
+{
+  "name": "spoiler-notifier",
+  "version": "1.0.0",
+  "description": "An MTG spoiler crawler and notifier app",
+  "main": "index.js",
+  "author": "Jovan Damjanovic <jovandamjanovic@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "crawler": "^1.1.4",
+    "https": "^1.0.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
