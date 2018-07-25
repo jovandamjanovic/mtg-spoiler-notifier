@@ -3,7 +3,8 @@ const https = require('https');
 const mongoose = require('mongoose');
 const c = new Crawler();
 
-mongoose.connect('mongodb://jovandamjanovic:jovan123@ds247001.mlab.com:47001/mtg-spoilers', { useNewUrlParser: true });
+// mongoose.connect('mongodb://jovandamjanovic:jovan123@ds247001.mlab.com:47001/mtg-spoilers', { useNewUrlParser: true });
+mongoose.connect('mongodb://mongo:27017/mtg-spoilers', { useNewUrlParser: true });
 const cardSchema = new mongoose.Schema({
     name: String,
     link: String,

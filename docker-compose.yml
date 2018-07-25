@@ -1,0 +1,18 @@
+version: "2"
+services:
+  scraper:
+    build: .
+    container_name: "scraper"
+    links:
+    - mongo
+    depends_on:
+    - mongo
+  mongo:
+    image: mongo
+    ports:
+    - "27017:27017"
+    command: mongod --smallfiles
+    volumes:
+    - data-volume:/data/db
+volumes:
+  data-volume:
