@@ -8,7 +8,8 @@
   "private": false,
   "dependencies": {
     "crawler": "^1.1.4",
-    "https": "^1.0.0"
+    "https": "^1.0.0",
+    "mongoose": "^5.2.5"
   },
   "scripts": {
     "start": "node index.js"
