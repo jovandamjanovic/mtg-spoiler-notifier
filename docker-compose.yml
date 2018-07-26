@@ -8,10 +8,13 @@ services:
     depends_on:
     - mongo
   mongo:
-    image: mongo
+    image: mongo:latest
+    container_name: mongo
+    environment: 
+    - MONGO_LOG_DIR=/dev/null
     ports:
     - "27017:27017"
-    command: mongod --smallfiles
+    command: mongod --smallfiles --logpath=/dev/null # --quiet
     volumes:
     - data-volume:/data/db
 volumes:

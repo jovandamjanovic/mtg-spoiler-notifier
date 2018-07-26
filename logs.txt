@@ -1,0 +1,106 @@
+Attaching to scraper, spoiler-notifier_mongo_1
+[33mmongo_1    |[0m 2018-07-25T10:08:56.056+0000 I CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+[33mmongo_1    |[0m 2018-07-25T10:08:56.084+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=6099da1a5fd2
+[33mmongo_1    |[0m 2018-07-25T10:08:56.085+0000 I CONTROL  [initandlisten] db version v4.0.0
+[33mmongo_1    |[0m 2018-07-25T10:08:56.085+0000 I CONTROL  [initandlisten] git version: 3b07af3d4f471ae89e8186d33bbb1d5259597d51
+[33mmongo_1    |[0m 2018-07-25T10:08:56.085+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+[33mmongo_1    |[0m 2018-07-25T10:08:56.085+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+[33mmongo_1    |[0m 2018-07-25T10:08:56.085+0000 I CONTROL  [initandlisten] modules: none
+[33mmongo_1    |[0m 2018-07-25T10:08:56.085+0000 I CONTROL  [initandlisten] build environment:
+[33mmongo_1    |[0m 2018-07-25T10:08:56.085+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+[33mmongo_1    |[0m 2018-07-25T10:08:56.085+0000 I CONTROL  [initandlisten]     distarch: x86_64
+[33mmongo_1    |[0m 2018-07-25T10:08:56.085+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+[33mmongo_1    |[0m 2018-07-25T10:08:56.085+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true }, storage: { mmapv1: { smallFiles: true } } }
+[33mmongo_1    |[0m 2018-07-25T10:08:56.087+0000 I STORAGE  [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+[33mmongo_1    |[0m 2018-07-25T10:08:56.087+0000 I STORAGE  [initandlisten] 
+[33mmongo_1    |[0m 2018-07-25T10:08:56.087+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+[33mmongo_1    |[0m 2018-07-25T10:08:56.087+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+[33mmongo_1    |[0m 2018-07-25T10:08:56.087+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=3438M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+[33mmongo_1    |[0m 2018-07-25T10:08:56.713+0000 I STORAGE  [initandlisten] WiredTiger message [1532513336:713205][1:0x7f8f92f2fa00], txn-recover: Main recovery loop: starting at 1/32640
+[33mmongo_1    |[0m 2018-07-25T10:08:56.784+0000 I STORAGE  [initandlisten] WiredTiger message [1532513336:784786][1:0x7f8f92f2fa00], txn-recover: Recovering log 1 through 2
+[33mmongo_1    |[0m 2018-07-25T10:08:56.828+0000 I STORAGE  [initandlisten] WiredTiger message [1532513336:828372][1:0x7f8f92f2fa00], txn-recover: Recovering log 2 through 2
+[33mmongo_1    |[0m 2018-07-25T10:08:56.860+0000 I STORAGE  [initandlisten] WiredTiger message [1532513336:860692][1:0x7f8f92f2fa00], txn-recover: Set global recovery timestamp: 0
+[33mmongo_1    |[0m 2018-07-25T10:08:56.918+0000 I RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+[33mmongo_1    |[0m 2018-07-25T10:08:56.990+0000 W STORAGE  [initandlisten] Detected configuration for non-active storage engine mmapv1 when current storage engine is wiredTiger
+[33mmongo_1    |[0m 2018-07-25T10:08:56.990+0000 I CONTROL  [initandlisten] 
+[33mmongo_1    |[0m 2018-07-25T10:08:56.990+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+[33mmongo_1    |[0m 2018-07-25T10:08:56.990+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+[33mmongo_1    |[0m 2018-07-25T10:08:56.990+0000 I CONTROL  [initandlisten] 
+[33mmongo_1    |[0m 2018-07-25T10:08:57.078+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+[33mmongo_1    |[0m 2018-07-25T10:08:57.081+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+[33mmongo_1    |[0m 2018-07-25T10:08:57.980+0000 I NETWORK  [listener] connection accepted from 172.20.0.3:48364 #1 (1 connection now open)
+[33mmongo_1    |[0m 2018-07-25T10:08:57.986+0000 I NETWORK  [conn1] received client metadata from 172.20.0.3:48364 conn1: { driver: { name: "nodejs", version: "3.1.1" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "4.15.0-29-generic" }, platform: "Node.js v10.7.0, LE, mongodb-core: 3.1.0" }
+[33mmongo_1    |[0m 2018-07-25T10:23:58.924+0000 I NETWORK  [listener] connection accepted from 172.20.0.3:49126 #2 (2 connections now open)
+[33mmongo_1    |[0m 2018-07-25T10:23:58.925+0000 I NETWORK  [listener] connection accepted from 172.20.0.3:49128 #3 (3 connections now open)
+[33mmongo_1    |[0m 2018-07-25T10:23:58.926+0000 I NETWORK  [listener] connection accepted from 172.20.0.3:49130 #4 (4 connections now open)
+[33mmongo_1    |[0m 2018-07-25T10:23:58.928+0000 I NETWORK  [listener] connection accepted from 172.20.0.3:49132 #5 (5 connections now open)
+[33mmongo_1    |[0m 2018-07-25T13:53:59.141+0000 I COMMAND  [conn5] command mtg-spoilers.cards command: aggregate { aggregate: "cards", pipeline: [ { $match: { name: "Finest Hour" } }, { $group: { _id: null, n: { $sum: 1 } } } ], cursor: {}, lsid: { id: UUID("2a95cbae-f7fb-4efa-90be-413f6fb9aee7") }, $db: "mtg-spoilers" } planSummary: COLLSCAN keysExamined:0 docsExamined:29 cursorExhausted:1 numYields:0 nreturned:1 reslen:142 locks:{ Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 2 } }, Collection: { acquireCount: { r: 2 } } } protocol:op_query 114ms
+[33mmongo_1    |[0m 2018-07-25T13:53:59.141+0000 I COMMAND  [conn1] command mtg-spoilers.cards command: aggregate { aggregate: "cards", pipeline: [ { $match: { name: "Eel Umbra" } }, { $group: { _id: null, n: { $sum: 1 } } } ], cursor: {}, lsid: { id: UUID("1dd54210-7256-4a0e-9338-58400332cb2a") }, $db: "mtg-spoilers" } planSummary: COLLSCAN keysExamined:0 docsExamined:29 cursorExhausted:1 numYields:0 nreturned:1 reslen:142 locks:{ Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 2 } }, Collection: { acquireCount: { r: 2 } } } protocol:op_query 115ms
+[33mmongo_1    |[0m 2018-07-25T13:53:59.141+0000 I COMMAND  [conn2] command mtg-spoilers.cards command: aggregate { aggregate: "cards", pipeline: [ { $match: { name: "Heavenly Blademaster" } }, { $group: { _id: null, n: { $sum: 1 } } } ], cursor: {}, lsid: { id: UUID("50d313c3-19f3-4028-af71-cf6b48d9be55") }, $db: "mtg-spoilers" } planSummary: COLLSCAN keysExamined:0 docsExamined:29 cursorExhausted:1 numYields:0 nreturned:1 reslen:142 locks:{ Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 2 } }, Collection: { acquireCount: { r: 2 } } } protocol:op_query 114ms
+[33mmongo_1    |[0m 2018-07-25T13:53:59.141+0000 I COMMAND  [conn4] command mtg-spoilers.cards command: aggregate { aggregate: "cards", pipeline: [ { $match: { name: "Dictate of Kruphix" } }, { $group: { _id: null, n: { $sum: 1 } } } ], cursor: {}, lsid: { id: UUID("9c7bff6e-94da-48bf-897e-7177faacdfd1") }, $db: "mtg-spoilers" } planSummary: COLLSCAN keysExamined:0 docsExamined:29 cursorExhausted:1 numYields:0 nreturned:1 reslen:142 locks:{ Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 2 } }, Collection: { acquireCount: { r: 2 } } } protocol:op_query 114ms
+[33mmongo_1    |[0m 2018-07-25T13:53:59.141+0000 I COMMAND  [conn3] command mtg-spoilers.cards command: aggregate { aggregate: "cards", pipeline: [ { $match: { name: "Bear Umbra" } }, { $group: { _id: null, n: { $sum: 1 } } } ], cursor: {}, lsid: { id: UUID("01497fea-1928-4e85-9c0e-72f9a050f464") }, $db: "mtg-spoilers" } planSummary: COLLSCAN keysExamined:0 docsExamined:29 cursorExhausted:1 numYields:0 nreturned:1 reslen:142 locks:{ Global: { acquireCount: { r: 2 } }, Database: { acquireCount: { r: 2 } }, Collection: { acquireCount: { r: 2 } } } protocol:op_query 114ms
+[36mscraper    |[0m 
+[36mscraper    |[0m > spoiler-notifier@1.0.0 start /docker/app
+[36mscraper    |[0m > node index.js
+[36mscraper    |[0m 
+[36mscraper    |[0m Connected to db!
+[36mscraper    |[0m polling magicspoilers!
+[36mscraper    |[0m Checking for cards already in db.
+[36mscraper    |[0m No new cards.
+[36mscraper    |[0m polling magicspoilers!
+[36mscraper    |[0m Checking for cards already in db.
+[36mscraper    |[0m New cards spoiled!
+[36mscraper    |[0m Saving into database.
+[36mscraper    |[0m Sending email.
+[36mscraper    |[0m Server responded with 200
+[36mscraper    |[0m polling magicspoilers!
+[36mscraper    |[0m Checking for cards already in db.
+[36mscraper    |[0m New cards spoiled!
+[36mscraper    |[0m Saving into database.
+[36mscraper    |[0m Sending email.
+[36mscraper    |[0m Server responded with 200
+[36mscraper    |[0m polling magicspoilers!
+[36mscraper    |[0m Checking for cards already in db.
+[36mscraper    |[0m No new cards.
+[36mscraper    |[0m polling magicspoilers!
+[36mscraper    |[0m Checking for cards already in db.
+[36mscraper    |[0m No new cards.
+[36mscraper    |[0m polling magicspoilers!
+[36mscraper    |[0m Checking for cards already in db.
+[36mscraper    |[0m No new cards.
+[36mscraper    |[0m polling magicspoilers!
+[36mscraper    |[0m Checking for cards already in db.
+[36mscraper    |[0m New cards spoiled!
+[36mscraper    |[0m Saving into database.
+[36mscraper    |[0m Sending email.
+[36mscraper    |[0m Server responded with 200
+[36mscraper    |[0m polling magicspoilers!
+[36mscraper    |[0m Checking for cards already in db.
+[36mscraper    |[0m No new cards.
+[36mscraper    |[0m polling magicspoilers!
+[36mscraper    |[0m Checking for cards already in db.
+[36mscraper    |[0m New cards spoiled!
+[36mscraper    |[0m Saving into database.
+[36mscraper    |[0m Sending email.
+[36mscraper    |[0m Server responded with 200
+[36mscraper    |[0m polling magicspoilers!
+[36mscraper    |[0m Checking for cards already in db.
+[36mscraper    |[0m No new cards.
+[36mscraper    |[0m polling magicspoilers!
+[36mscraper    |[0m Checking for cards already in db.
+[36mscraper    |[0m No new cards.
+[36mscraper    |[0m polling magicspoilers!
+[36mscraper    |[0m Checking for cards already in db.
+[36mscraper    |[0m No new cards.
+[36mscraper    |[0m polling magicspoilers!
+[36mscraper    |[0m Checking for cards already in db.
+[36mscraper    |[0m New cards spoiled!
+[36mscraper    |[0m Saving into database.
+[36mscraper    |[0m Sending email.
+[36mscraper    |[0m Server responded with 200
+[36mscraper    |[0m polling magicspoilers!
+[36mscraper    |[0m Checking for cards already in db.
+[36mscraper    |[0m No new cards.
+[36mscraper    |[0m polling magicspoilers!
+[36mscraper    |[0m Checking for cards already in db.
+[36mscraper    |[0m No new cards.
