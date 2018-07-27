@@ -18,7 +18,7 @@ const cardSchema = new mongoose.Schema({
       var _= o[f];
       o[f] = function(){
         var args = slice.call(arguments);
-        args.unshift(new Date().toISOString());
+        args.unshift(new Date().toLocaleString('en-GB', { timeZone: 'UTC' }));
         return _.apply(o, args);
       };
     });
